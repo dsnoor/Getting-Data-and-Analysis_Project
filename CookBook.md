@@ -43,21 +43,21 @@ Steps to Transform Data (The Script):
 
 -   Installs necessary R packages before executing the script
 
--   *Loads data into R from the working directory (UCI folder)*
+-   Loads data into R from the working directory (UCI folder)
 
 -   Cleans up colNames by using gsub to remove punctuation of the column names
     found in features.
 
--   *Uses cbind to add subject and activity data to test and training data.*
+-   Uses cbind to add subject and activity data to test and training data.
 
 -   Merges the complete training and the test sets (which include subject and
     activity) to create one data set using rbind.
 
--   *Extracts only the measurements on the mean and standard deviation for each
+-   Extracts only the measurements on the mean and standard deviation for each
     measurement using grep.*
 
--   *Using melt and dcast creates a second, independent tidy data set with the
-    average of each variable for each activity and each subject.*
+-   Using melt and dcast creates a second, independent tidy data set with the
+    average of each variable for each activity and each subject.
 
 -   Writes tidy data to space separated text file called AvgTinyData.txt.
 
@@ -69,7 +69,7 @@ Variables used in within the script
 -   **totalData** - a data.frame containing the subject, activity and all
     measurements for both train and test.
 
--   **MeanStdData **- a data.frame which contains only measurements on the mean
+-   **MeanStdData** - a data.frame which contains only measurements on the mean
     and standard deviation for each measurement labels - a character string
     vector containing the descriptive activity names for the activities in the
     data set.
