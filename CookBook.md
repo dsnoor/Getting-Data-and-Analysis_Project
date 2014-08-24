@@ -78,4 +78,4 @@ Variables used in within the script
     the "Subject" and "Activity" variables.
 
 -   **AvgTidyData** - a data.frame which contains a tidy data set with the
-    average of each variable for each activity and each subject
+    average of each variable for each activity and each subject.
