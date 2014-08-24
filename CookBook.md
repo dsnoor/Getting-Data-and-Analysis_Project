@@ -16,7 +16,7 @@ The Data
 ---------
 
 The script assumes that all necessary data is in working directory. The
-following files are used in the script (descriptions from README.txt):
+following files are used in the script:
 
 ./train/X_train.txt - Training set.
 
@@ -43,21 +43,21 @@ Steps to Transform Data (The Script):
 
 -   Installs necessary R packages before executing the script
 
--   *Loads data into R from the working directory (UCI folder)  *
+-   *Loads data into R from the working directory (UCI folder)*
 
 -   Cleans up colNames by using gsub to remove punctuation of the column names
-    found in features. * *
+    found in features.
 
--   *Uses cbind to add subject and activity data to test and training data. *
+-   *Uses cbind to add subject and activity data to test and training data.*
 
 -   Merges the complete training and the test sets (which include subject and
-    activity) to create one data set using rbind. * *
+    activity) to create one data set using rbind.
 
 -   *Extracts only the measurements on the mean and standard deviation for each
     measurement using grep.*
 
 -   *Using melt and dcast creates a second, independent tidy data set with the
-    average of each variable for each activity and each subject.  *
+    average of each variable for each activity and each subject.*
 
 -   Writes tidy data to space separated text file called AvgTinyData.txt.
 
